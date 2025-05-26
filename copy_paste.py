@@ -1,9 +1,9 @@
 from pathlib import Path
 class CopyPaste:
     """A class TO SIMULATE THE CLIB BOARD FUNCTIONS AT THE CLI LEVEL"""
-    def __init__(self):
+    def __init__(self, file_name='copied_data.txt'):
         """CONSTRUCTOR TO DEFINE TEMPORARY VARIABLE FOR FUNCTION VARIABLES"""
-        self.file = Path('copied_data.txt')
+        self.file = Path(file_name)
         self.show = None
         self.old_pin = None
         self.new_pin = None
